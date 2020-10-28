@@ -1,0 +1,58 @@
+<ion-app>
+   <ion-menu side="start" menuId="customleft" contentId="main" class="my-custom-menu">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Custom Menuleft</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Menu Item 1</ion-item>
+        <ion-item>Menu Item 2</ion-item>
+        <ion-item>Menu Item 3</ion-item>
+        <ion-item>Menu Item 4</ion-item>
+        <ion-item>Menu Item 5</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-menu side="end" menuId="customright" contentId="main" class="my-custom-menu">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Custom Menuright</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Menu Item 1</ion-item>
+        <ion-item>Menu Item 2</ion-item>
+        <ion-item>Menu Item 3</ion-item>
+        <ion-item>Menu Item 4</ion-item>
+        <ion-item>Menu Item 5</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+ 
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button 	menu="customleft"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Ionic Boilerplate
+      </ion-title>
+      <!-- <ion-button type="submit"  color="secondary" >Sign In</ion-button> -->
+      <ion-buttons slot="end">
+        <ion-menu-button menu="customright"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-router-outlet id="main"></ion-router-outlet>
+  <!-- <ion-router-outlet></ion-router-outlet> -->
+  
+
+ 
+</ion-app>
+
+
+
